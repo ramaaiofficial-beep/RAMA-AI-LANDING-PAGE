@@ -7,15 +7,15 @@ export const VisionMissionSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-6">
           <h2 
-            className="mb-4"
+            className="mb-4 px-2"
             style={{
               alignSelf: "stretch",
               textAlign: "center",
               fontFamily: '"Public Sans", sans-serif',
-              fontSize: "clamp(32px, 6vw, 48px)",
+              fontSize: "clamp(1.75rem, 4vw, 2.625rem)",
               fontStyle: "normal",
               fontWeight: 500,
-              lineHeight: "normal",
+              lineHeight: "1.2",
               color: "#FAFAFA"
             }}
           >
@@ -27,12 +27,13 @@ export const VisionMissionSection = () => {
               color: "#777777",
               textAlign: "center",
               fontFamily: '"Public Sans", sans-serif',
-              fontSize: "clamp(16px, 2.5vw, 20px)",
+              fontSize: "clamp(0.875rem, 1.6vw, 1.125rem)",
               fontStyle: "normal",
               fontWeight: 400,
-              lineHeight: "100%",
+              lineHeight: "1.6",
               letterSpacing: "0%"
             }}
+            className="px-2"
           >
             RAMA AI is an emerging deep-tech company focused on creating AI
             solutions that truly understand and serve humanity.
@@ -40,7 +41,7 @@ export const VisionMissionSection = () => {
         </div>
 
         {/* Vision & Mission Cards */}
-        <div className="grid md:grid-cols-2 gap-8 items-start">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-start">
           {/* Vision */}
           <div className="text-center">
             <div className="relative mx-auto w-24 h-24 mb-6">
@@ -58,10 +59,10 @@ export const VisionMissionSection = () => {
                 color: "#FAFAFA",
                 textAlign: "center",
                 fontFamily: '"Public Sans", sans-serif',
-                fontSize: "28px",
+                fontSize: "clamp(1.25rem, 2.5vw, 1.625rem)",
                 fontStyle: "normal",
                 fontWeight: 200,
-                lineHeight: "normal"
+                lineHeight: "1.3"
               }}
               className="mb-4"
             >
@@ -73,10 +74,10 @@ export const VisionMissionSection = () => {
                 color: "#777777",
                 textAlign: "center",
                 fontFamily: '"Public Sans", sans-serif',
-                fontSize: "20px",
+                fontSize: "clamp(0.875rem, 1.5vw, 1.125rem)",
                 fontStyle: "normal",
                 fontWeight: 400,
-                lineHeight: "normal"
+                lineHeight: "1.6"
               }}
             >
               To redefine artificial intelligence as a trusted companion that enhances
@@ -119,14 +120,13 @@ export const VisionMissionSection = () => {
             </div>
             <h3 
               style={{
-                width: "365px",
                 color: "#FAFAFA",
                 textAlign: "center",
                 fontFamily: '"Public Sans", sans-serif',
-                fontSize: "28px",
+                fontSize: "clamp(1.25rem, 2.5vw, 1.625rem)",
                 fontStyle: "normal",
                 fontWeight: 200,
-                lineHeight: "normal"
+                lineHeight: "1.3"
               }}
               className="mb-4 mx-auto"
             >
@@ -138,10 +138,10 @@ export const VisionMissionSection = () => {
                 color: "#777777",
                 textAlign: "center",
                 fontFamily: '"Public Sans", sans-serif',
-                fontSize: "20px",
+                fontSize: "clamp(0.875rem, 1.5vw, 1.125rem)",
                 fontStyle: "normal",
                 fontWeight: 400,
-                lineHeight: "normal"
+                lineHeight: "1.6"
               }}
             >
               To continuously innovate human-centric AI systems through research,

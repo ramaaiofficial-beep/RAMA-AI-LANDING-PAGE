@@ -80,19 +80,19 @@ export const Navbar = () => {
       }}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-18 md:h-20">
           {/* Logo */}
           <a 
             href="#home" 
             className="flex-shrink-0"
             onClick={(e) => handleNavClick(e, "#home")}
           >
-            <img src={logo} alt="RAMA AI" className="h-8 sm:h-10 md:h-12 w-auto" style={{ maxHeight: "80%", objectFit: "contain" }} />
+            <img src={logo} alt="RAMA AI" className="w-auto" style={{ height: "clamp(1.5rem, 3vw, 3rem)", maxHeight: "80%", objectFit: "contain" }} />
           </a>
 
           {/* Desktop Navigation */}
           <div 
-            className="hidden lg:flex items-center gap-1 relative rounded-full px-2 py-1"
+            className="hidden md:flex items-center gap-1 relative rounded-full px-2 py-1"
             style={{
               background: "linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(42, 15, 8, 0.5) 50%, rgba(0, 0, 0, 0.6) 100%)",
               backdropFilter: "blur(24px) saturate(180%)",
@@ -133,13 +133,13 @@ export const Navbar = () => {
                 pointerEvents: "none"
               }}
             />
-            <div className="relative z-10 flex items-center gap-1">
+            <div className="relative z-10 flex items-center gap-0.5 sm:gap-1">
               {navItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="px-4 py-2 text-sm font-medium text-white transition-all rounded-full hover:bg-white/5 relative z-10"
+                  className="px-2 sm:px-3 md:px-4 py-2 text-xs sm:text-sm font-medium text-white transition-all rounded-full hover:bg-white/5 relative z-10 whitespace-nowrap"
                   style={{
                     textShadow: "0 1px 3px rgba(0, 0, 0, 0.8), 0 0 8px rgba(255, 255, 255, 0.1)"
                   }}
@@ -151,15 +151,15 @@ export const Navbar = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Button variant="hero" size="lg" className="bg-primary text-primary-foreground border-primary hover:bg-primary/90" asChild>
+          <div className="hidden md:block">
+            <Button variant="hero" size="sm" className="bg-primary text-primary-foreground border-primary hover:bg-primary/90 text-xs sm:text-sm px-3 sm:px-4" asChild>
               <a href="#contact" onClick={(e) => handleNavClick(e, "#contact")}>Contact</a>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -169,7 +169,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-card/95 backdrop-blur-xl border border-border/50 rounded-2xl mt-2 p-4 animate-fade-in">
+          <div className="md:hidden bg-card/95 backdrop-blur-xl border border-border/50 rounded-2xl mt-2 p-4 animate-fade-in">
             <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <a

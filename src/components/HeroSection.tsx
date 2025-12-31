@@ -23,8 +23,8 @@ export const HeroSection = () => {
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
       </div>
 
-      <div className="container-custom relative z-10 pt-0" style={{ marginTop: "-10px" }}>
-        <div className="max-w-4xl mx-auto text-center relative">
+      <div className="container-custom relative z-10" style={{ paddingTop: "clamp(4rem, 8vw + 2rem, 6rem)" }}>
+        <div className="max-w-4xl mx-auto text-center relative" style={{ paddingLeft: "clamp(0.5rem, 2vw, 1rem)", paddingRight: "clamp(0.5rem, 2vw, 1rem)" }}>
           {/* Red Gridlines Pattern */}
           <div 
             className="absolute inset-0 opacity-30 pointer-events-none"
@@ -85,15 +85,15 @@ export const HeroSection = () => {
 
             {/* Main Headline */}
             <h1 
-              className="mb-6 animate-fade-up text-center" 
+              className="mb-4 sm:mb-6 animate-fade-up text-center px-2" 
               style={{ 
                 animationDelay: "0.1s",
                 color: "#FAFAFA",
                 fontFamily: '"Spline Sans", sans-serif',
-                fontSize: "clamp(2rem, 4vw, 4rem)",
+                fontSize: "clamp(1.75rem, 4.5vw, 3.5rem)",
                 fontStyle: "normal",
                 fontWeight: 300,
-                lineHeight: "1"
+                lineHeight: "1.1"
               }}
             >
               Building Practical, Scalable
@@ -104,10 +104,10 @@ export const HeroSection = () => {
                 style={{
                   color: "#FD5009",
                   fontFamily: '"Instrument Serif", serif',
-                  fontSize: "clamp(2rem, 4vw, 4rem)",
+                  fontSize: "clamp(1.75rem, 4.5vw, 3.5rem)",
                   fontStyle: "italic",
                   fontWeight: 400,
-                  lineHeight: "1"
+                  lineHeight: "1.1"
                 }}
               >
                 AI Systems
@@ -115,32 +115,32 @@ export const HeroSection = () => {
             </h1>
 
             {/* Subheadline */}
-            <div className="rounded-xl p-4 sm:p-6 mb-4 sm:mb-6 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
+            <div className="rounded-xl p-4 sm:p-6 mb-6 sm:mb-8 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
               <p 
                 style={{
                   color: "#FAFAFA",
                   fontFamily: '"Public Sans", sans-serif',
-                  fontSize: "clamp(16px, 2.5vw, 20px)",
+                  fontSize: "clamp(0.875rem, 1.8vw, 1.125rem)",
                   fontStyle: "normal",
                   fontWeight: 400,
                   lineHeight: "1.6",
                   textAlign: "center"
                 }}
-                className="px-2 sm:px-0"
+                className="px-2 sm:px-4"
               >
-                We design,deploy AI systems that think responsibly, speak naturally, and work reliably combining cultural intelligence, advanced engineering, and real-world deployment experience across multiple industries.
+                We design, deploy AI systems that think responsibly, speak naturally, and work reliably combining cultural intelligence, advanced engineering, and real-world deployment experience across multiple industries.
               </p>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4 sm:px-0 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              <Button variant="hero" size="xl" asChild className="w-full sm:w-auto min-w-[200px] sm:min-w-[234px]">
+              <Button variant="hero" size="lg" asChild className="w-full sm:w-auto" style={{ minWidth: "clamp(180px, 15vw, 234px)" }}>
                 <a 
                   href="#industries"
                   style={{
                     color: "#06071A",
                     fontFamily: '"Public Sans", sans-serif',
-                    fontSize: "clamp(13px, 1.5vw, 14px)",
+                    fontSize: "clamp(0.75rem, 1.2vw, 0.875rem)",
                     fontStyle: "normal",
                     fontWeight: 600,
                     lineHeight: "110%"
@@ -149,13 +149,13 @@ export const HeroSection = () => {
                   Explore Our Solutions
                 </a>
               </Button>
-              <Button variant="heroOutline" size="xl" asChild className="w-full sm:w-auto min-w-[200px] sm:min-w-[234px]">
+              <Button variant="heroOutline" size="lg" asChild className="w-full sm:w-auto" style={{ minWidth: "clamp(180px, 15vw, 234px)" }}>
                 <a 
                   href="#contact"
                   style={{
                     color: "#FAFAFA",
                     fontFamily: '"Public Sans", sans-serif',
-                    fontSize: "clamp(13px, 1.5vw, 14px)",
+                    fontSize: "clamp(0.75rem, 1.2vw, 0.875rem)",
                     fontStyle: "normal",
                     fontWeight: 500,
                     lineHeight: "normal"

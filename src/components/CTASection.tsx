@@ -21,12 +21,13 @@ export const CTASection = () => {
               color: "#FAFAFA",
               textAlign: "center",
               fontFamily: '"Spline Sans", sans-serif',
-              fontSize: "48px",
+              fontSize: "clamp(1.75rem, 4vw, 2.625rem)",
               fontStyle: "normal",
               fontWeight: 600,
-              lineHeight: "normal",
+              lineHeight: "1.2",
               marginBottom: "24px"
             }}
+            className="px-2"
           >
             Experience the Future of
             <br />
@@ -38,10 +39,10 @@ export const CTASection = () => {
               color: "#777777",
               textAlign: "center",
               fontFamily: '"Public Sans", sans-serif',
-              fontSize: "24px",
+              fontSize: "clamp(1rem, 1.8vw, 1.25rem)",
               fontStyle: "normal",
               fontWeight: 400,
-              lineHeight: "normal",
+              lineHeight: "1.6",
               marginBottom: "40px",
               maxWidth: "672px",
               marginLeft: "auto",
@@ -49,6 +50,7 @@ export const CTASection = () => {
               textShadow: "0 1px 4px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.6)",
               letterSpacing: "0.01em"
             }}
+            className="px-4"
           >
             Our platform seamlessly integrates learning, wellness, and
             engagement into one intelligent companion that grows with you.

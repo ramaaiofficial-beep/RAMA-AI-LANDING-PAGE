@@ -39,12 +39,13 @@ export const CareersSection = () => {
               color: "#FAFAFA",
               textAlign: "center",
               fontFamily: '"Spline Sans", sans-serif',
-              fontSize: "clamp(28px, 5vw, 40px)",
+              fontSize: "clamp(1.5rem, 3.5vw, 2.25rem)",
               fontStyle: "normal",
               fontWeight: 500,
-              lineHeight: "normal",
+              lineHeight: "1.2",
               marginBottom: "16px"
             }}
+            className="px-2"
           >
             Internship & Graduate Programs
           </h2>
@@ -54,17 +55,18 @@ export const CareersSection = () => {
               color: "#777777",
               textAlign: "center",
               fontFamily: '"Public Sans", sans-serif',
-              fontSize: "clamp(16px, 2.5vw, 20px)",
+              fontSize: "clamp(0.875rem, 1.6vw, 1.125rem)",
               fontStyle: "normal",
               fontWeight: 400,
-              lineHeight: "normal"
+              lineHeight: "1.6"
             }}
+            className="px-2"
           >
             Join a team that's redefining the relationship between humans and AI.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
           {/* Programs */}
           <div className="space-y-6">
             {programs.map((program) => (
@@ -150,10 +152,10 @@ export const CareersSection = () => {
                     alignSelf: "stretch",
                     color: "#FFF",
                     fontFamily: '"Public Sans", sans-serif',
-                    fontSize: "28px",
+                    fontSize: "clamp(1.25rem, 2.5vw, 1.625rem)",
                     fontStyle: "normal",
                     fontWeight: 400,
-                    lineHeight: "normal",
+                    lineHeight: "1.3",
                     marginBottom: "12px",
                     textShadow: "0 2px 8px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.8)",
                     letterSpacing: "0.01em"
@@ -165,23 +167,17 @@ export const CareersSection = () => {
                   style={{
                     alignSelf: "stretch",
                     color: "#777777",
-                    textAlign: "justify",
-                    textJustify: "inter-word",
-                    wordSpacing: "0.05em",
-                    hyphens: "auto",
-                    WebkitHyphens: "auto",
-                    MozHyphens: "auto",
-                    msHyphens: "auto",
+                    textAlign: "left",
                     fontFamily: '"Public Sans", sans-serif',
-                    fontSize: "20px",
+                    fontSize: "clamp(0.875rem, 1.5vw, 1.125rem)",
                     fontStyle: "normal",
                     fontWeight: 400,
-                    lineHeight: "normal",
+                    lineHeight: "1.6",
                     marginBottom: "24px",
                     textShadow: "0 1px 4px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.6)",
                     letterSpacing: "0.01em"
                   }}
-                  className="md:text-justify text-left"
+                  className="md:text-justify"
                 >
                   {program.description}
                 </p>
@@ -232,10 +228,10 @@ export const CareersSection = () => {
               style={{
                 color: "#FFF",
                 fontFamily: '"Public Sans", sans-serif',
-                fontSize: "28px",
+                fontSize: "clamp(1.25rem, 2.5vw, 1.625rem)",
                 fontStyle: "normal",
                 fontWeight: 400,
-                lineHeight: "normal",
+                lineHeight: "1.3",
                 marginBottom: "32px"
               }}
             >
@@ -272,10 +268,10 @@ export const CareersSection = () => {
                         style={{
                           color: "#FFF",
                           fontFamily: '"Public Sans", sans-serif',
-                          fontSize: "20px",
+                          fontSize: "clamp(1rem, 2vw, 1.25rem)",
                           fontStyle: "normal",
                           fontWeight: 600,
-                          lineHeight: "normal",
+                          lineHeight: "1.4",
                           marginBottom: "8px"
                         }}
                       >
@@ -284,21 +280,15 @@ export const CareersSection = () => {
                       <p 
                         style={{
                           color: "#777777",
-                          textAlign: "justify",
-                          textJustify: "inter-word",
-                          wordSpacing: "0.05em",
-                          hyphens: "auto",
-                          WebkitHyphens: "auto",
-                          MozHyphens: "auto",
-                          msHyphens: "auto",
+                          textAlign: "left",
                           fontFamily: '"Public Sans", sans-serif',
-                          fontSize: "16px",
+                          fontSize: "clamp(0.875rem, 1.3vw, 1rem)",
                           fontStyle: "normal",
                           fontWeight: 400,
-                          lineHeight: "normal",
+                          lineHeight: "1.6",
                           marginBottom: "24px"
                         }}
-                        className="md:text-justify text-left"
+                        className="md:text-justify"
                       >
                         {step.description}
                       </p>

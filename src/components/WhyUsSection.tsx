@@ -20,12 +20,12 @@ export const WhyUsSection = () => {
               color: "#FAFAFA",
               textAlign: "center",
               fontFamily: '"Public Sans", sans-serif',
-              fontSize: "48px",
+              fontSize: "clamp(1.75rem, 4vw, 2.625rem)",
               fontStyle: "normal",
               fontWeight: 500,
-              lineHeight: "normal"
+              lineHeight: "1.2"
             }}
-            className="mb-4"
+            className="mb-4 px-2"
           >
             Why <span 
               style={{
@@ -34,10 +34,10 @@ export const WhyUsSection = () => {
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 fontFamily: '"Public Sans", sans-serif',
-                fontSize: "48px",
+                fontSize: "clamp(1.75rem, 4vw, 2.625rem)",
                 fontStyle: "normal",
                 fontWeight: 500,
-                lineHeight: "normal"
+                lineHeight: "1.2"
               }}
             >
               RAMA AI
@@ -49,11 +49,12 @@ export const WhyUsSection = () => {
               color: "#777777",
               textAlign: "center",
               fontFamily: '"Public Sans", sans-serif',
-              fontSize: "20px",
+              fontSize: "clamp(0.875rem, 1.6vw, 1.125rem)",
               fontStyle: "normal",
               fontWeight: 400,
-              lineHeight: "normal"
+              lineHeight: "1.6"
             }}
+            className="px-2"
           >
             Our approach combines culture, ethics, and engineering to deliver practical AI
             solutions that scale responsibly across industries and communities.
@@ -61,7 +62,7 @@ export const WhyUsSection = () => {
         </div>
 
         {/* Images Grid */}
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {images.map((image, index) => (
             <div
               key={index}

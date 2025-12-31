@@ -84,7 +84,7 @@ export const ContactSection = () => {
   return (
     <section id="contact" className="section-padding bg-background noise-overlay">
       <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-20">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16">
           {/* Contact Info */}
           <div>
             <h2 
@@ -93,31 +93,25 @@ export const ContactSection = () => {
                 alignSelf: "stretch",
                 color: "#FAFAFA",
                 fontFamily: '"Spline Sans", sans-serif',
-                fontSize: "clamp(28px, 5vw, 40px)",
+                fontSize: "clamp(1.5rem, 3.5vw, 2.25rem)",
                 fontStyle: "normal",
                 fontWeight: 500,
-                lineHeight: "normal"
+                lineHeight: "1.2"
               }}
             >
               Let's Connect
             </h2>
             <p 
-              className="mb-10 md:text-justify text-left"
+              className="mb-8 sm:mb-10 md:text-justify text-left"
               style={{
                 alignSelf: "stretch",
                 color: "#777777",
-                textAlign: "justify",
-                textJustify: "inter-word",
-                wordSpacing: "0.05em",
-                hyphens: "auto",
-                WebkitHyphens: "auto",
-                MozHyphens: "auto",
-                msHyphens: "auto",
+                textAlign: "left",
                 fontFamily: '"Public Sans", sans-serif',
-                fontSize: "20px",
+                fontSize: "clamp(0.875rem, 1.5vw, 1.125rem)",
                 fontStyle: "normal",
                 fontWeight: 400,
-                lineHeight: "normal"
+                lineHeight: "1.6"
               }}
             >
               Ready to transform the future of human-AI interaction? We'd love to hear from you.
@@ -136,10 +130,10 @@ export const ContactSection = () => {
                         alignSelf: "stretch",
                         color: "#777777",
                         fontFamily: '"Public Sans", sans-serif',
-                        fontSize: "20px",
+                        fontSize: "clamp(1rem, 1.5vw, 1.125rem)",
                         fontStyle: "normal",
                         fontWeight: 600,
-                        lineHeight: "normal"
+                        lineHeight: "1.4"
                       }}
                     >
                       {info.title}
@@ -150,10 +144,10 @@ export const ContactSection = () => {
                         alignSelf: "stretch",
                         color: "#777777",
                         fontFamily: '"Public Sans", sans-serif',
-                        fontSize: "20px",
+                        fontSize: "clamp(0.875rem, 1.3vw, 1rem)",
                         fontStyle: "normal",
                         fontWeight: 400,
-                        lineHeight: "normal"
+                        lineHeight: "1.5"
                       }}
                     >
                       {info.description}
@@ -178,10 +172,10 @@ export const ContactSection = () => {
                 alignSelf: "stretch",
                 color: "#EEEEEE",
                 fontFamily: '"Public Sans", sans-serif',
-                fontSize: "28px",
+                fontSize: "clamp(1.25rem, 2.5vw, 1.625rem)",
                 fontStyle: "normal",
                 fontWeight: 400,
-                lineHeight: "normal"
+                lineHeight: "1.3"
               }}
             >
               Get in touch

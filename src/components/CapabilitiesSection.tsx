@@ -36,12 +36,12 @@ export const CapabilitiesSection = () => {
               color: "#FAFAFA",
               textAlign: "center",
               fontFamily: '"Spline Sans", sans-serif',
-              fontSize: "clamp(28px, 5vw, 40px)",
+              fontSize: "clamp(1.5rem, 3.5vw, 2.25rem)",
               fontStyle: "normal",
               fontWeight: 500,
-              lineHeight: "normal"
+              lineHeight: "1.2"
             }}
-            className="mb-4"
+            className="mb-4 px-2"
           >
             Pioneering the{" "}
             <span 
@@ -51,10 +51,10 @@ export const CapabilitiesSection = () => {
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 fontFamily: '"Spline Sans", sans-serif',
-                fontSize: "clamp(28px, 5vw, 40px)",
+                fontSize: "clamp(1.5rem, 3.5vw, 2.25rem)",
                 fontStyle: "normal",
                 fontWeight: 500,
-                lineHeight: "normal"
+                lineHeight: "1.2"
               }}
             >
               Future of AI
@@ -66,11 +66,12 @@ export const CapabilitiesSection = () => {
               color: "#777777",
               textAlign: "center",
               fontFamily: '"Public Sans", sans-serif',
-              fontSize: "clamp(16px, 2.5vw, 20px)",
+              fontSize: "clamp(0.875rem, 1.6vw, 1.125rem)",
               fontStyle: "normal",
               fontWeight: 400,
-              lineHeight: "normal"
+              lineHeight: "1.6"
             }}
+            className="px-2"
           >
             Our work focuses on building future-ready AI systems that scale
             responsibly and perform reliably in real operational environments.
@@ -78,7 +79,7 @@ export const CapabilitiesSection = () => {
         </div>
 
         {/* Capabilities Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {capabilities.map((capability, index) => {
             // Card 1: Dark gradient (red/orange to dark)
             // Card 2: Background image only (no gradient)
@@ -88,7 +89,7 @@ export const CapabilitiesSection = () => {
             return (
               <div
                 key={capability.title}
-                className="p-8 group relative overflow-hidden rounded-2xl cursor-pointer"
+                className="p-6 sm:p-8 group relative overflow-hidden rounded-2xl cursor-pointer"
                 style={{ 
                   animationDelay: `${index * 0.1}s`,
                   background: isGradientCard 
@@ -152,10 +153,10 @@ export const CapabilitiesSection = () => {
                     style={{
                       color: "#FAFAFA",
                       fontFamily: '"Public Sans", sans-serif',
-                      fontSize: "22px",
+                      fontSize: "clamp(1.125rem, 2.2vw, 1.375rem)",
                       fontStyle: "normal",
                       fontWeight: 600,
-                      lineHeight: "normal",
+                      lineHeight: "1.3",
                       marginBottom: "8px"
                     }}
                   >
@@ -164,20 +165,14 @@ export const CapabilitiesSection = () => {
                   <p 
                     style={{
                       color: "#777777",
-                      textAlign: "justify",
-                      textJustify: "inter-word",
-                      wordSpacing: "0.05em",
-                      hyphens: "auto",
-                      WebkitHyphens: "auto",
-                      MozHyphens: "auto",
-                      msHyphens: "auto",
+                      textAlign: "left",
                       fontFamily: '"Public Sans", sans-serif',
-                      fontSize: "20px",
+                      fontSize: "clamp(0.875rem, 1.5vw, 1.125rem)",
                       fontStyle: "normal",
                       fontWeight: 400,
-                      lineHeight: "normal"
+                      lineHeight: "1.6"
                     }}
-                    className="md:text-justify text-left"
+                    className="md:text-justify"
                   >
                     {capability.description}
                   </p>

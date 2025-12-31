@@ -59,13 +59,13 @@ export const IndustriesSection = () => {
               color: "#FAFAFA",
               textAlign: "center",
               fontFamily: '"Spline Sans", sans-serif',
-              fontSize: "clamp(28px, 5vw, 40px)",
+              fontSize: "clamp(1.5rem, 3.5vw, 2.25rem)",
               fontStyle: "normal",
               fontWeight: 500,
-              lineHeight: "normal",
+              lineHeight: "1.2",
               marginBottom: "16px"
             }}
-            className="mb-4"
+            className="mb-4 px-2"
           >
             Transforming Lives Across Industries
           </h2>
@@ -75,11 +75,12 @@ export const IndustriesSection = () => {
               color: "#777777",
               textAlign: "center",
               fontFamily: '"Public Sans", sans-serif',
-              fontSize: "clamp(16px, 2.5vw, 18px)",
+              fontSize: "clamp(0.875rem, 1.6vw, 1.125rem)",
               fontStyle: "normal",
               fontWeight: 400,
-              lineHeight: "normal"
+              lineHeight: "1.6"
             }}
+            className="px-2"
           >
             Our AI solutions address real human needs in the sectors that matter most.
           </p>
@@ -92,10 +93,10 @@ export const IndustriesSection = () => {
               key={industry.title}
               className="glass-card overflow-hidden"
             >
-              <div className={`grid lg:grid-cols-2 ${industry.reverse ? "lg:flex-row-reverse" : ""}`}>
+              <div className={`grid lg:grid-cols-2 ${industry.reverse ? "lg:flex-row-reverse" : ""} gap-0`}>
                 {/* Content */}
                 <div 
-                  className={`p-8 lg:p-12 flex flex-col justify-center relative ${industry.reverse ? "lg:order-2" : ""}`}
+                  className={`p-6 sm:p-8 lg:p-10 xl:p-12 flex flex-col justify-center relative ${industry.reverse ? "lg:order-2" : ""}`}
                   style={{
                     backgroundImage: `url(${heroBg})`,
                     backgroundSize: "cover",
@@ -115,10 +116,10 @@ export const IndustriesSection = () => {
                         alignSelf: "stretch",
                         color: "#FAFAFA",
                         fontFamily: '"Public Sans", sans-serif',
-                        fontSize: "28px",
+                        fontSize: "clamp(1.25rem, 2.5vw, 1.625rem)",
                         fontStyle: "normal",
                         fontWeight: 400,
-                        lineHeight: "normal",
+                        lineHeight: "1.3",
                         marginBottom: "16px",
                         textShadow: "0 2px 8px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.8)",
                         letterSpacing: "0.01em"
@@ -130,23 +131,17 @@ export const IndustriesSection = () => {
                       style={{
                         alignSelf: "stretch",
                         color: "#777777",
-                        textAlign: "justify",
-                        textJustify: "inter-word",
-                        wordSpacing: "0.05em",
-                        hyphens: "auto",
-                        WebkitHyphens: "auto",
-                        MozHyphens: "auto",
-                        msHyphens: "auto",
+                        textAlign: "left",
                         fontFamily: '"Public Sans", sans-serif',
-                        fontSize: "20px",
+                        fontSize: "clamp(0.875rem, 1.5vw, 1.125rem)",
                         fontStyle: "normal",
                         fontWeight: 400,
-                        lineHeight: "normal",
+                        lineHeight: "1.6",
                         marginBottom: "24px",
                         textShadow: "0 1px 4px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.6)",
                         letterSpacing: "0.01em"
                       }}
-                      className="md:text-justify text-left"
+                      className="md:text-justify"
                     >
                       {industry.description}
                     </p>
@@ -155,10 +150,10 @@ export const IndustriesSection = () => {
                       style={{
                         color: "#777777",
                         fontFamily: '"Public Sans", sans-serif',
-                        fontSize: "20px",
+                        fontSize: "clamp(0.875rem, 1.5vw, 1.125rem)",
                         fontStyle: "normal",
                         fontWeight: 400,
-                        lineHeight: "normal",
+                        lineHeight: "1.6",
                         textShadow: "0 1px 4px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.6)",
                         letterSpacing: "0.01em"
                       }}
@@ -174,7 +169,7 @@ export const IndustriesSection = () => {
                 </div>
 
                 {/* Image */}
-                <div className={`relative h-64 lg:h-auto ${industry.reverse ? "lg:order-1" : ""}`}>
+                <div className={`relative h-64 sm:h-80 md:h-96 lg:h-auto min-h-[300px] ${industry.reverse ? "lg:order-1" : ""}`}>
                   {/* Background images replacing gradient overlays */}
                   {index === 0 && (
                     <div 
