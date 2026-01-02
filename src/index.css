@@ -522,4 +522,117 @@
     }
   }
 
+  /* Fix footer alignment in landscape mobile mode - catch all landscape scenarios */
+  @media (orientation: landscape) and (max-width: 1024px) {
+    footer .footer-bottom-container {
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: clamp(0.25rem, 1vw, 0.5rem) !important;
+      min-height: 40px !important;
+      height: 40px !important;
+    }
+    
+    /* Legal Links - Left */
+    footer .footer-legal-links {
+      order: 1 !important;
+      flex: 0 0 auto !important;
+      align-self: center !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 40px !important;
+      line-height: 40px !important;
+    }
+    
+    footer .footer-legal-links > a {
+      line-height: 1.5 !important;
+      display: inline-block !important;
+      vertical-align: middle !important;
+    }
+    
+    /* Copyright - Center */
+    footer .footer-copyright {
+      order: 2 !important;
+      flex: 0 0 auto !important;
+      align-self: center !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 40px !important;
+      line-height: 40px !important;
+    }
+    
+    footer .footer-copyright > p {
+      line-height: 1.5 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      display: inline-block !important;
+      vertical-align: middle !important;
+    }
+    
+    /* Social Icons - Right - reduce size for better alignment */
+    footer .footer-social-icons {
+      order: 3 !important;
+      flex: 0 0 auto !important;
+      align-self: center !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 40px !important;
+      gap: clamp(0.5rem, 1.5vw, 0.75rem) !important;
+    }
+    
+    /* Reduce social icon size for better alignment */
+    footer .footer-social-icons > a {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      vertical-align: middle !important;
+      width: clamp(2rem, 4vw, 2.5rem) !important;
+      height: clamp(2rem, 4vw, 2.5rem) !important;
+    }
+    
+    footer .footer-social-icons > a > svg,
+    footer .footer-social-icons > a > * {
+      width: clamp(0.875rem, 1.75vw, 1.125rem) !important;
+      height: clamp(0.875rem, 1.75vw, 1.125rem) !important;
+    }
+  }
+  
+  /* Also handle desktop mode on mobile devices in landscape */
+  @media (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
+    footer .footer-bottom-container {
+      flex-direction: row !important;
+      align-items: center !important;
+      min-height: 40px !important;
+      height: 40px !important;
+      gap: clamp(0.25rem, 1vw, 0.5rem) !important;
+    }
+    
+    footer .footer-legal-links,
+    footer .footer-copyright,
+    footer .footer-social-icons {
+      height: 40px !important;
+      align-self: center !important;
+      line-height: 40px !important;
+    }
+    
+    footer .footer-social-icons {
+      gap: clamp(0.5rem, 1.5vw, 0.75rem) !important;
+    }
+    
+    footer .footer-social-icons > a {
+      width: clamp(2rem, 4vw, 2.5rem) !important;
+      height: clamp(2rem, 4vw, 2.5rem) !important;
+    }
+  }
+
 }

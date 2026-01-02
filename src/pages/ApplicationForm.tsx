@@ -183,6 +183,7 @@ Optional Note: ${formData.note || "N/A"}
                 id="name"
                 name="name"
                 type="text"
+                autoComplete="name"
                 value={formData.name}
                 onChange={(e) => handleInputChange("name", e.target.value)}
                 placeholder="Enter your full name"
@@ -225,6 +226,7 @@ Optional Note: ${formData.note || "N/A"}
                 id="email"
                 name="email"
                 type="email"
+                autoComplete="email"
                 value={formData.email}
                 onChange={(e) => handleInputChange("email", e.target.value)}
                 placeholder="Enter your email address"
@@ -361,6 +363,7 @@ Optional Note: ${formData.note || "N/A"}
                 id="resume"
                 name="resume"
                 type="url"
+                autoComplete="off"
                 value={formData.resume}
                 onChange={(e) => handleInputChange("resume", e.target.value)}
                 placeholder="Paste your Google Drive resume link here"
@@ -415,6 +418,8 @@ Optional Note: ${formData.note || "N/A"}
               </Label>
               <Textarea
                 id="note"
+                name="note"
+                autoComplete="off"
                 value={formData.note}
                 onChange={(e) => handleInputChange("note", e.target.value)}
                 placeholder='Examples: "Final year student, available immediately" / "Strong in Python, learning React" / "Looking for long-term opportunity"'

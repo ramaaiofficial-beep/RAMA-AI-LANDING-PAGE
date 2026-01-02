@@ -191,6 +191,8 @@ export const ContactSection = () => {
                 <Input
                   id="name"
                   name="name"
+                  type="text"
+                  autoComplete="name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="bg-muted/50 border-border/50 focus:border-primary"
@@ -205,6 +207,7 @@ export const ContactSection = () => {
                   id="email"
                   name="email"
                   type="email"
+                  autoComplete="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="bg-muted/50 border-border/50 focus:border-primary"
@@ -218,6 +221,8 @@ export const ContactSection = () => {
                 <Input
                   id="subject"
                   name="subject"
+                  type="text"
+                  autoComplete="off"
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                   className="bg-muted/50 border-border/50 focus:border-primary"
@@ -231,6 +236,7 @@ export const ContactSection = () => {
                 <Textarea
                   id="message"
                   name="message"
+                  autoComplete="off"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="bg-muted/50 border-border/50 focus:border-primary min-h-[120px]"

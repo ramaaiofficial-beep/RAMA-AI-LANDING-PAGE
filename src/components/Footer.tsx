@@ -52,9 +52,9 @@ export const Footer = () => {
 
       <div className="container-custom relative z-10" style={{ paddingTop: "clamp(1rem, 2.5vw, 1.5rem)", paddingBottom: "clamp(1rem, 2.5vw, 1.5rem)" }}>
         {/* Bottom Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between sm:items-center" style={{ gap: "clamp(0.75rem, 2vw, 1.25rem)" }}>
+        <div className="flex flex-col sm:flex-row items-center justify-between footer-bottom-container" style={{ gap: "clamp(0.75rem, 2vw, 1.25rem)" }}>
           {/* Left: Legal Links */}
-          <div className="flex flex-nowrap justify-center sm:justify-start order-2 sm:order-1 items-center self-center" style={{ gap: "clamp(0.5rem, 1.5vw, 1rem)" }}>
+          <div className="footer-legal-links flex flex-nowrap justify-center sm:justify-start order-2 sm:order-1 items-center" style={{ gap: "clamp(0.5rem, 1.5vw, 1rem)" }}>
             {footerLinks.legal.map((link, index) => (
               <a
                 key={link.label}
@@ -67,14 +67,14 @@ export const Footer = () => {
           </div>
           
           {/* Center: Copyright */}
-          <div className="flex items-center justify-center flex-1 order-1 sm:order-2 self-center">
-            <p className="text-muted-foreground text-xs sm:text-sm text-center w-full leading-tight">
+          <div className="footer-copyright flex items-center justify-center order-1 sm:order-2 flex-shrink-0">
+            <p className="text-muted-foreground text-xs sm:text-sm text-center whitespace-nowrap leading-tight">
               © 2025 RAMA AI. All rights reserved.
             </p>
           </div>
           
           {/* Right: Social Media Icons */}
-          <div className="flex items-center justify-center order-3 self-center" style={{ gap: "clamp(0.75rem, 2vw, 1.5rem)" }}>
+          <div className="footer-social-icons flex items-center justify-center order-3 flex-shrink-0" style={{ gap: "clamp(0.75rem, 2vw, 1.5rem)" }}>
             <a
               href="https://www.instagram.com/ramaai.in?igsh=eGo1b2x4d3AwbGY4&utm_source=qr"
               target="_blank"
