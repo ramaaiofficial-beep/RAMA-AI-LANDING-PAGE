@@ -69,7 +69,7 @@ export const WhyUsSection = () => {
               style={{
                 borderRadius: "clamp(1rem, 2vw, 1.25rem)",
                 overflow: "hidden",
-                backgroundColor: "#000",
+                backgroundColor: "transparent",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
